@@ -1,40 +1,581 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-		<title>reveal.js</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<title>Why Do We Tell Stories?</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<!-- Core Reveal.js styles -->
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" />
+
+		<!-- Syntax highlighting theme -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+
+		<!-- Your custom styles -->
+		<link rel="stylesheet" href="css/custom.css" />
 	</head>
 	<body>
+		<audio id="background-music" loop preload="auto" style="display: none;">
+  <source src="audio/background-music.mp3" type="audio/mpeg">
+  <source src="audio/background-music.ogg" type="audio/ogg">
+</audio>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Title Slide with animated background -->
+				<section class="animated-bg" data-transition="fade" style="text-align:center; color: rgb(245, 242, 242); position: relative; width: 100%; height: 100%;">
+  <canvas id="question-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;"></canvas>
+  <div class="title-content" style="position: relative; z-index: 1;">
+    <h1 style="font-size:3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Why Do We Tell Stories?</h1>
+    <h3 style="font-weight:normal;">Jack Yao, 24–25</h3>
+    <p style="font-style:italic;">Capstone • Literature & Composition</p>
+  </div>
+</section>
+
+
+				<!-- Other slides -->
+				<section>
+  <!-- Horizontal slide (shown when going right) -->
+  <section data-background-image="https://collegeinfogeek.com/wp-content/uploads/2018/11/Essential-Books.jpg"
+  data-background-opacity="0.7">
+    <div class="top-left-title">Essential Idea</div>
+    <div class="centered-body">
+      Stories with underlying cautionary messages seek to warn society against the dangerous traits of human nature.</p>
+    </div>	
+  </section>
+
+  <!-- Vertical slide (shown when going down) -->
+  <section data-background-image="https://collegeinfogeek.com/wp-content/uploads/2018/11/Essential-Books.jpg"
+         data-background-opacity="0.4">
+  <div style="background-color: rgba(0, 0, 0, 0.5); padding: 4px; color: white;">
+    <p>Stories are fantastic mediums of expression. They are intrinsically engaging, tapping into our empathy to create emotional connections. Authors take advantage of these mediums, externalizing their own agenda upon their stories. Specifically, I will be focusing on how stories from different genres, forms, and periods seek to guide humanity towards a better future by exemplifying the consequences that the dark side of human nature brings, ultimately making their impact on humanity.</p>
+  </div>
+		</section>
+</section>
+
+
+	
+<section>
+  <!-- Main Whiplash slide -->
+  <section data-autoplay
+    data-background-image="https://cdna.artstation.com/p/assets/images/images/024/078/468/large/walter-licinio-jazz-portfolio-piece.jpg?1581263076"
+    data-background-opacity="0.6"
+    style="color: white;">
+
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; gap: 20px; margin-top: -50px;">
+      
+      <!-- Left side: text + video -->
+      <div style="flex: 1;">
+        <p style="margin: 0; font-size: 1.2em;">Damien Chazelle's</p>
+        <p style="margin: 0; font-style: italic;">Whiplash</p>
+        <iframe
+          src="https://www.youtube.com/embed/e3CIEr0AbFE?start=234"
+          width="420"
+          height="236"
+          style="margin-top: 10px; border: none;"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+        <p style="font-size: 0.7em; margin-top: 8px; color: #ccc; font-style: italic;">
+          "That's my part and I'll be on your stage"
+		  (warning: profanity)
+        </p>
+      </div>
+
+      <!-- Right side: second video -->
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-end;">
+        <p style="margin: 0; opacity: 0;">Comparison: Fletcher's Rage in Context Is A ball</p>
+        <iframe
+          src="https://www.youtube.com/embed/MsWlktW0kj4"
+          width="420"
+          height="236"
+          style="margin-top: 10px; border: none;"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+        <p style="font-size: 0.7em; margin-top: 8px; color: #ccc; font-style: italic; text-align: right;">
+          "I wanna be one of the greats"
+		  (warning: profanity)
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Child slide - vertical navigation down from the Whiplash slide -->
+  <section data-background-image="https://cdna.artstation.com/p/assets/images/images/024/078/468/large/walter-licinio-jazz-portfolio-piece.jpg?1581263076"
+           data-background-opacity="0.3"
+           style="color: white;">
+    
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; max-width: 90%; margin: 0 auto;">
+      <h3 style="margin-bottom: 15px; color: #f4c430; font-size: 1.5em;">The Cost of Perfection</h3>
+      
+      <div style="text-align: left; font-size: 0.55em; line-height: 1.4;">
+        <p style="margin-bottom: 12px;">Andrew Neiman is a jazz drummer studying at a music academy where he meets Terence Fletcher—the notorious maestro of the academy's jazz band. Fletcher employs a variety of abusive and manipulative tactics in order to push his students towards greatness, which causes Andrew to develop and unhealthy obsession with drumming in hopes of becoming one of the best.</p>
+        
+        <ul style="margin: 10px 0; padding-left: 20px;">
+          <li style="margin-bottom: 8px;"><strong>The Danger</strong> -Determined to prove his worth and play in the jazz competition, Andrew becomes hyperfixated on one goal: retrieving his drumsticks. Andrew values his musical career more than his own life, reflected in his carelessness while driving, eventually resulting in a near-death crash.</li>
+          <li style="margin-bottom: 8px;"><strong>Social Impact</strong> -Andrew has to sacrifice relationships for the sake of achieving greatness, believing that exclusively directing his efforts towards drumming is the only way to become one of the greats. </li>
+          <li style="margin-bottom: 8px;"><strong>The Abuse</strong> -Fletcher is determined to produce a musical prodigy, resorting to extreme tactics such as verbal and physical abuse. The desire to become a great teacher molds him into a heartless and cold individual.</li>
+        </ul>
+        
+        <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+          We all aspire to do something extraordinary and earn recognition, but at what point does that desire go too far?
+        </p>
+      </div>
+    </div>
+    
+  </section>
+</section>
+<!--The Pedestrian-->
+<section>
+	<section data-autoplay
+    data-background-image="https://www.dystopic.co.uk/wp-content/uploads/2014/10/Lone-man.jpg"
+    data-background-opacity="0.6"
+    style="color: white;">
+
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; gap: 20px; margin-top: -50px;">
+      
+      <!-- Left side: text + video -->
+      <div style="flex: 1;">
+        <p style="margin: 0; font-size: 1.2em;">Ray Bradbury's</p>
+        <p style="margin: 0; font-size: 0.9em;">"The Pedestrian"</p>
+         <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+          "In ten years of walking by night or day, for thousands of miles, he had never met another person walking, not once in all that time"
+        </p>
+    </div>
+  </section>
+
+  <!-- Child slide - vertical navigation down from the Whiplash slide -->
+  <section data-background-image="https://www.dystopic.co.uk/wp-content/uploads/2014/10/Lone-man.jpg"
+           data-background-opacity="0.3"
+           style="color: white;">
+    
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; max-width: 90%; margin: 0 auto;">
+      <h3 style="margin-bottom: 15px; color: #f4c430; font-size: 1.5em;">The Dangers of Technology</h3>
+      
+      <div style="text-align: left; font-size: 0.50em; line-height: 1.4;">
+        <p style="margin-bottom: 12px;">Leonard Mead lives in the year 2053 in a large yet desolate city where technology has advanced. Traversing the city during his nightly walks brings Leonard a feeling of loneliness as the whole city is at home captivated by their television. Leonard is eventually stopped by a robotic police car, questioning his motives for walking. The police car dismisses Leonard’s profession of being a writer as not legitimate and his act of walking being unorthodox, leading to Leonard’s banishment to a research facility on regressive tendencies.</p>
+        
+        <ul style="margin: 10px 0; padding-left: 20px;">
+          <li style="margin-bottom: 8px;"><strong>Conformity</strong> -As society has begun to rely upon technology, individuality is stripped away. Everyone is expected to follow the herd and watch television, which makes everyone indistinguishable from one another. Leonard is a non-conformist whose routine walks are unorthodox and an act of resistance. </li>
+          <li style="margin-bottom: 8px;"><strong>Loss of Humanity</strong> -Humans are inherently social and creative, yet in this society where technology dominates every aspect of one's life, these core elements of what makes humans human are systematically diminished. Being confined to one's home and forbade from walking creates isolation and a lack of social interaction. As creating art is forbidden and watching television is forced, society becomes consumers, lacking the creativity that is the essence of being human.</li>   
+        </ul>
+        
+        <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+          Technology has made our lives easier, for better or worse, but when does its convenience affect our humanity?
+        </p>
+      </div>
+    </div>
+    
+  </section>
+</section>
+
+		<section>
+  <!--Lord of the Flies -->
+  <section data-autoplay
+    data-background-image="https://i.ytimg.com/vi/uGKBrz6_Gq4/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGBEgcihFMA8=&rs=AOn4CLDiBfIp2pVVsoMU-aWCwg3fjVI0Fw"
+    data-background-opacity="0.6"
+    style="color: white;">
+
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; gap: 20px; margin-top: -50px;">
+      
+      <!-- Left side: text + video -->
+      <div style="flex: 1;">
+        <p style="margin: 0; font-size: 1.2em;">William Golding's</p>
+        <p style="margin: 0; font-style: italic;">Lord of the Flies</p>
+        <p style="font-size: 0.7em; margin-top: 8px; color: #ccc; font-style: italic;">
+          
+        </p>
+      </div>
+
+      <!-- Right side: second video -->
+      <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-end;">
+        <p style="margin: 0; opacity: 0;">Comparison: Fletcher's Rage in Context Is A ball</p>
+        <p style="font-size: 0.7em; margin-top: 8px; color: #ccc; font-style: italic; text-align: right;">
+          "Maybe there is a beast... Maybe it's only us"
+		  
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Child slide - vertical navigation down from the LotF slide -->
+  <section data-background-image="https://i.ytimg.com/vi/uGKBrz6_Gq4/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGBEgcihFMA8=&rs=AOn4CLDiBfIp2pVVsoMU-aWCwg3fjVI0Fw"
+           data-background-opacity="0.3"
+           style="color: white;">
+    
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; max-width: 90%; margin: 0 auto;">
+      <h3 style="margin-bottom: 15px; color: #f4c430; font-size: 1.45em;">The Significance of Civilization</h3>
+      
+      <div style="text-align: left; font-size: 0.47em; line-height: 1.4;">
+        <p style="margin-bottom: 12px;">A group of boys is stranded on an island without adults due to an ongoing war. Immediately, two boys, Ralph and Jack, emerge as candidates for leadership. Ralph advocates for civilization and order, while Jack advocates for chaos and fun. Ralph is initially the leader until fear brings out the savagery within the boys, destroying the civilization Ralph attempts to create and causing them to favor Jack more. As logic and morality fade, the island descends into full savagery, ending with the death of two boys. The novel ends with the boys being rescued by a naval officer, returning to the war-ridden world.</p>
+        
+        <ul style="margin: 10px 0; padding-left: 20px;">
+          <li style="margin-bottom: 8px;"><strong>A Damper</strong> -Civilization acts as a damper for the inner evil that resides in all humans. Under Ralph's rule, progress towards leaving the island is made, temporarily hindering the savagery inside the boys. However, the makeshift civilization created by Ralph was weak, with no actual enforcement or legitimacy, fear naturally wrecks it. However, on a broader scale, civilization can never truly prevent the natural evil of humans, highlighted by the underlying problem in the novel: war.</li>
+          <li style="margin-bottom: 8px;"><strong>Natural Evil</strong> -Jack symbolizes the evil that resides in all humans. His constant attempts at undermining Ralph's civilization indicate how dificult it is to suppress this evil. As Jack uses fear to rule the boys, they dive into his savage ways and give in to their desires, including murder.</li>
+        </ul>
+        
+        <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+         Civilization, order, and rules—we have always taken these as inadvertently absolute, yet how significant are they really?
+        </p>
+      </div>
+    </div>
+    
+  </section>
+</section>
+
+<section>
+  <!--Romeo and Juliet-->
+	<section data-autoplay
+    data-background-image="https://artlecture.com/data/page/202004/editor_upload_20200430225405_1372.png"
+    data-background-opacity="0.6"
+    style="color: white;">
+
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; gap: 20px; margin-top: -50px;">
+      
+      <!-- Left side: text + video -->
+      <div style="flex: 1;">
+        <p style="margin: 0; font-size: 1.2em;">William Shakespeare's</p>
+        <p style="margin: 0; font-style: italic; font-size: 0.9em;">Romeo and Juliet</p>
+         <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+          “The exchange of thy love's faithful vow for mine,” says Romeo, just hours after meeting Juliet.
+        </p>
+    </div>
+  </section>
+
+  <!-- Child slide - vertical navigation down from the Whiplash slide -->
+  <section data-background-image="https://artlecture.com/data/page/202004/editor_upload_20200430225405_1372.png"
+           data-background-opacity="0.3"
+           style="color: white;">
+    
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; max-width: 90%; margin: 0 auto;">
+      <h3 style="margin-bottom: 15px; color: #f4c430; font-size: 1.5em;">Repercussions of Impulsivity</h3>
+      
+      <div style="text-align: left; font-size: 0.48em; line-height: 1.4;">
+        <p style="margin-bottom: 12px;">Shakespeare’s Romeo and Juliet follows the tragic tale of two lovers, Romeo and Juliet, born into feuding families. Despite the conflict with society, Romeo and Juliet stay determined to be together, and within the span of five days after first meeting, they get married and die tragically. Many factors led to this tragedy, but they all have one thing in common: they stem from impulse. By letting emotion dictate their actions rather than logic, a flawed plan and multiple deaths are derived. However, Romeo and Juliet’s deaths are the turning point for their families, realizing the harm their hatred brings, allowing their relationship to heal.</p>
+        
+        <ul style="margin: 10px 0; padding-left: 20px;">
+          <li style="margin-bottom: 8px;"><strong>Impulsivity</strong> -The tragedy of the play is driven through impulse. The duration of which the events occur, over five days, is the biggest indicator. Being a short period of time in which tragedy occurs over highlights how the actions made were throughout the play were not well-planned and done with a lack of foresight.</li>
+          <li style="margin-bottom: 8px;"><strong>Selfishness</strong> -The impulsivity demonstrated throughout the play is reflective of the selfishness of each character. Romeo and Juliet's decision to get married despite the obvious disapproval from society and their parents, dragging along others into the tragedy just to see their goal through, highlight this. Even when their relationship causes the death of another, they continue out of self-interest, disregarding the harm they caused to others.</li>   
+        </ul>
+        
+        <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+          Humans make decisions with a mix of emotion and logic, but what happens when we let our feelings override reason?
+        </p>
+      </div>
+    </div>
+    
+  </section>
+</section>
+
+    <!--Big Yellow Taxi-->
+<section>
+  <section data-autoplay
+    data-background-image="https://i.guim.co.uk/img/media/80eece6bf8adebe33850ee747bd2df2074f9faf6/0_263_7884_4733/master/7884.jpg?width=1200&quality=85&auto=format&fit=max&s=ff375291dad149bf9a73a4f3b703cdd1"
+    data-background-opacity="0.6"
+    style="color: white; padding: 20px;">
+
+    <!-- Text at the top center -->
+    <div style="text-align: center; margin-bottom: 20px;">
+      <p style="margin: 0; font-size: 1.2em;">Joni Mitchell's</p>
+      <p style="margin: 0; font-size: 1em;">"Big Yellow Taxi"</p>
+      <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+        "They paved paradise and put up a parking lot"
+      </p>
+    </div>
+
+    <!-- Centered embedded YouTube video -->
+    <div style="display: flex; justify-content: center;">
+      <iframe
+        src="https://www.youtube.com/embed/2595abcvh2M"
+        width="560"
+        height="315"
+        style="border: none;"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </section>
+
+  <!-- Child slide - vertical navigation down from the Whiplash slide -->
+  <section data-background-image="https://i.guim.co.uk/img/media/80eece6bf8adebe33850ee747bd2df2074f9faf6/0_263_7884_4733/master/7884.jpg?width=1200&quality=85&auto=format&fit=max&s=ff375291dad149bf9a73a4f3b703cdd1"
+           data-background-opacity="0.3"
+           style="color: white;">
+    
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; max-width: 90%; margin: 0 auto;">
+      <h3 style="margin-bottom: 15px; color: #f4c430; font-size: 1.5em;">The Sacrifice for Greed</h3>
+      
+      <div style="text-align: left; font-size: 0.50em; line-height: 1.4;">
+        <p style="margin-bottom: 12px;">Inspired after seeing a massive parking lot obstructing the view of nearby islands in Hawaii, Joni Mitchell writes a song of environmental protest critiquing humanities rapid urban development and destruction of natural spaces for monetary gain. Through the lines "That you don't know what you got 'til it's gone?" she emphasizes how humans will soon realize the consequences of their irreversible damage done to the planet once it's too late.</p>
+        
+        <ul style="margin: 10px 0; padding-left: 20px;">
+          <li style="margin-bottom: 8px;"><strong>The Greed</strong> -The root cause of the issues Mitchell sings of is greed. The lines "They paved paradise and put up a parking lot" is a metaphor comparing paradise to nature, which is being destroyed to create room for commerce, emphasizing the tragic loss of something sacred for something relatively trivial. Another instance of this occurs in the lines "Hey, farmer, farmer, put away your DDT," showing that individuals are willing to degrade the environment with harmful chemicals in order to sell a product.</li>
+          <li style="margin-bottom: 8px;"><strong>The Consequences</strong> -As Mitchell already states, you don't realize what you have until it's gone, humans take nature and all its beauty for granted, but once its all been exploited and becomes history, humans will realize how important nature is. This goes far beyond nature's aesthetic value—the environment is crucial for sustaining life and the fact that humans realize this yet continue to act in neglectful manners exemplefies the power greed has over humans.</li>   
+        </ul>
+        
+        <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+       Humans can be greedy—but when the majority act out of self-interest, what happens to our planet?
+        </p>
+      </div>
+    </div>
+    
+  </section>
+</section>
+<!--The Lottery-->
+        <section>
+  <section data-autoplay
+    data-background-image="https://jholmsey.wordpress.com/wp-content/uploads/2015/06/the-lottery.jpg"
+    data-background-opacity="0.6"
+    style="color: white; padding: 20px;">
+
+    <!-- Text at the top center -->
+    <div style="text-align: center; margin-bottom: 20px;">
+      <p style="margin: 0; font-size: 1.2em;">Larry Yust's</p>
+      <p style="margin: 0; font-size: 1em;">The Lottery</p>
+      <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+     "There's always been a lottery"
+      </p>
+    </div>
+
+    <!-- Centered embedded YouTube video -->
+    <div style="display: flex; justify-content: center;">
+      <iframe
+        src="https://www.youtube.com/embed/HZyhVg31iaQ?start=488&end=556"
+        width="560"
+        height="315"
+        style="border: none;"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </section>
+
+  <!-- Child slide - vertical navigation down from the Whiplash slide -->
+  <section data-background-image="https://jholmsey.wordpress.com/wp-content/uploads/2015/06/the-lottery.jpg"
+           data-background-opacity="0.3"
+           style="color: white;">
+    
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; max-width: 90%; margin: 0 auto;">
+      <h3 style="margin-bottom: 15px; color: #f4c430; font-size: 1.5em;">The Need for Change</h3>
+      
+      <div style="text-align: left; font-size: 0.50em; line-height: 1.4;">
+        <p style="margin-bottom: 12px;">Originally written in 1948, this is a short film adaptation of Shirley Jackson’s “The Lottery”. The film takes place in a small rural town on the day of an ancient tradition. There is a yearly tradition where everyone must draw a piece of paper, and whoever is chosen must be sacrificed. Some people are skeptical and question why they continue to follow the tradition, as nearby towns have already abolished it. However, these thoughts are shut down by the eldest in the town, believing the other towns to be crazy, having been persuaded by the young folk for breaking tradition—one they have been used to for so long. The film ends with a gruesome shot of the victim’s stoning.
+
+</p>
+        
+        <ul style="margin: 10px 0; padding-left: 20px;">
+          <li style="margin-bottom: 8px;"><strong>Blindly Following</strong> -The citizens of the town are aware of other towns that have ended the tradition, yet they are unable to do so themselves out of fear of the unknown. Even the oldest in the town was born into the tradition, showing how the tradition predates everyone, yet no one dares reject it as it's what they have been used to for their entire life. </li>
+          <li style="margin-bottom: 8px;"><strong>The Bad</strong> -The tradition is completely unneccesary, resulting in a yearly murder that serves the citizens no purpose. Because the citizens are too scared to challenge the status quo due to how accustomed they are to the tradition, the tradition will continue on. More and more murders will occur in the name of nothing, all because people are afraid of change.</li>   
+        </ul>
+        
+        <p style="margin-top: 15px; font-style: italic; color: #ccc; font-size: 0.9em;">
+       Humans are afraid of change and acclimation, but just how far will our fear of the unknown take us?
+        </p>
+      </div>
+    </div>
+    
+  </section>
+</section>
+
+
+
+			
+<!-- Thank You Slide with animated background -->
+<section class="animated-bg" data-transition="fade" style="text-align:center; color: rgb(245, 242, 242); position: relative; width: 100%; height: 100%; overflow: hidden;">
+  <!-- Animated canvas background -->
+  <canvas id="thank-you-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;"></canvas>
+  
+  <!-- Floating story elements -->
+  <div class="floating-stories" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; opacity: 0.1;">
+    <div class="story-element" style="position: absolute; top: 10%; left: 15%; animation: float 6s ease-in-out infinite; font-size: 2em;">📚</div>
+    <div class="story-element" style="position: absolute; top: 20%; right: 20%; animation: float 7s ease-in-out infinite 1s; font-size: 1.5em;">✨</div>
+    <div class="story-element" style="position: absolute; bottom: 30%; left: 10%; animation: float 5s ease-in-out infinite 2s; font-size: 1.8em;">🎭</div>
+    <div class="story-element" style="position: absolute; bottom: 20%; right: 15%; animation: float 8s ease-in-out infinite 0.5s; font-size: 1.3em;">🎬</div>
+    <div class="story-element" style="position: absolute; top: 40%; left: 5%; animation: float 6s ease-in-out infinite 3s; font-size: 1.6em;">🎵</div>
+    <div class="story-element" style="position: absolute; top: 60%; right: 8%; animation: float 7s ease-in-out infinite 1.5s; font-size: 1.4em;">📖</div>
+  </div>
+  
+  <!-- Main content container -->
+  <div class="thank-you-content" style="position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; padding: 20px;">
+    
+  
+    <!-- Subtitle with typewriter effect -->
+    <div class="subtitle" style="animation: slideInFromBottom 2s ease-out 0.5s both;">
+      <h3 style="font-weight: normal; font-size: 1.5em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); opacity: 0; animation: typewriter 2s steps(40) 1s forwards;">
+        Thank You For Reading!
+      </h3>
+    </div>
+    
+
+    
+    <!-- Animated sparkles -->
+    <div class="sparkles" style="position: absolute; width: 100%; height: 100%; pointer-events: none;">
+      <div class="sparkle" style="position: absolute; top: 25%; left: 30%; width: 4px; height: 4px; background: #f4c430; border-radius: 50%; animation: sparkle 2s infinite 0s;"></div>
+      <div class="sparkle" style="position: absolute; top: 35%; right: 25%; width: 3px; height: 3px; background: #ffffff; border-radius: 50%; animation: sparkle 2s infinite 0.7s;"></div>
+      <div class="sparkle" style="position: absolute; bottom: 35%; left: 20%; width: 5px; height: 5px; background: #f4c430; border-radius: 50%; animation: sparkle 2s infinite 1.2s;"></div>
+      <div class="sparkle" style="position: absolute; bottom: 45%; right: 30%; width: 3px; height: 3px; background: #ffffff; border-radius: 50%; animation: sparkle 2s infinite 1.8s;"></div>
+      <div class="sparkle" style="position: absolute; top: 15%; right: 45%; width: 4px; height: 4px; background: #f4c430; border-radius: 50%; animation: sparkle 2s infinite 0.4s;"></div>
+    </div>
+  </div>
+  
+  <!-- CSS Animations -->
+  <style>
+    @keyframes slideInFromTop {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    @keyframes slideInFromBottom {
+      0% { transform: translateY(100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    @keyframes slideInFromRight {
+      0% { transform: translateX(100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    @keyframes typewriter {
+      0% { opacity: 0; }
+      1% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+    }
+    
+    @keyframes sparkle {
+      0%, 100% { opacity: 0; transform: scale(0); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+  
+  <!-- Background animation script -->
+  <script>
+    // Animated background similar to the title slide
+    (function() {
+      const canvas = document.getElementById('thank-you-canvas');
+      const ctx = canvas.getContext('2d');
+      
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+      
+      const particles = [];
+      const particleCount = 50;
+      
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.5;
+          this.vy = (Math.random() - 0.5) * 0.5;
+          this.size = Math.random() * 2 + 1;
+          this.opacity = Math.random() * 0.5 + 0.2;
+        }
+        
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        }
+        
+        draw() {
+          ctx.save();
+          ctx.globalAlpha = this.opacity;
+          ctx.fillStyle = '#f4c430';
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+      
+      // Initialize particles
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+      
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        particles.forEach(particle => {
+          particle.update();
+          particle.draw();
+        });
+        
+        // Draw connections between nearby particles
+        particles.forEach((particle, i) => {
+          particles.slice(i + 1).forEach(other => {
+            const dx = particle.x - other.x;
+            const dy = particle.y - other.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            
+            if (distance < 100) {
+              ctx.save();
+              ctx.globalAlpha = (100 - distance) / 100 * 0.1;
+              ctx.strokeStyle = '#ffffff';
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(particle.x, particle.y);
+              ctx.lineTo(other.x, other.y);
+              ctx.stroke();
+              ctx.restore();
+            }
+          });
+        });
+        
+        requestAnimationFrame(animate);
+      }
+      
+      animate();
+    })();
+  </script>
+</section>
 			</div>
 		</div>
 
+		<!-- Reveal.js scripts -->
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+
+		<!-- Particle animation script -->
+		<script src="js/questionParticles.js"></script>
 	</body>
 </html>
+
